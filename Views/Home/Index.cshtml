@@ -1,0 +1,17 @@
+﻿@using SQLite_DBOperations.Models
+@model IEnumerable<Students>
+<table border = "1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Grade</th>
+    </tr>
+    @foreach(var s in Model)
+    {
+        <tr>
+            <td>@s.Id</td>
+            <td>@s.Name</td>
+            <td>@s.Grade</td>
+        </tr>
+    }
+</table>
